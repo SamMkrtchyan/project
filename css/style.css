@@ -633,6 +633,191 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
   cursor: pointer;
   filter: none;
 }
+/*------------------Footer-------------------*/
+footer {
+  padding: 5px 0 10px;
+}
+
+.footer-row {
+  display: flex;
+  margin-top: 40px;
+}
+
+.footer-content {
+  width: 65%;
+}
+
+.footer-content h6 {
+  color: rgb(107, 107, 107);
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu > div {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  margin-right: 5px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-menu > div:hover {
+  color: black;
+}
+
+.footer-menu > div:nth-child(-n + 4):after {
+  content: "|";
+  display: inline-block;
+  padding: 0 5px;
+  color: #67768d;
+}
+
+.footer-services {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-services p {
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  margin-right: 5px;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.footer-services > div {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  margin-right: 5px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-services > div:hover {
+  color: black;
+}
+
+.footer-services > div:nth-child(-n + 4):after {
+  content: "|";
+  display: inline-block;
+  padding: 0 5px;
+  color: #67768d;
+}
+
+.footer-media-copyright {
+  width: 35%;
+  padding: 10px;
+}
+
+.footer-content > p {
+  font-size: 13px;
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  margin-top: 1rem;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-media a {
+  text-decoration: none !important;
+}
+
+.footer-media a span i {
+  background-color: #3dc9c2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.footer-security {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-security > div {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  margin-right: 5px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-security > div:hover {
+  color: black;
+}
+
+.footer-security > div:nth-child(-n + 2):after {
+  content: "|";
+  display: inline-block;
+  padding: 0 5px;
+  color: #67768d;
+}
+
+.footer-media-copyright > p {
+  font-size: 14px;
+  font-family: "Dosis", sans-serif;
+  color: rgb(107, 107, 107);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main-logo > img {
+  height: 80px;
+  width: auto;
+  cursor: pointer;
+}
+section {
+  border-bottom: 1px solid rgb(241, 236, 236);
+  padding-bottom: 40px;
+}
+.scrollToTop {
+  border: 2px solid #e46d85;
+  border-radius: 50%;
+  background: #fc8b90;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 35px;
+  right: 15px;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10000;
+  display: none;
+}
+
+.scrollToTop i {
+  color: white;
+  font-size: 22px;
+}
+
+.scrollToTop:hover {
+  background: #28c3bb;
+  border-color: #47cecb;
+}
 
 /* -----------------Media-------------------- */
 
@@ -647,3 +832,65 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     width: 80%;
   }
 }
+@media (max-width: 576px){
+  footer .main-logo {
+    text-align: center;
+  }
+  footer .main-logo > img {
+    height: 40px;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-menu {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .footer-menu > div {
+    margin: 5px;
+  }
+  .footer-services {
+    display: block;
+  }
+  .footer-services > div {
+    margin: 5px;
+  }
+  .footer-media-copyright {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-security {
+    margin: 5px;
+  }
+  .footer-security {
+    display: block;
+  }
+  .footer-media-copyright > p {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  }
+  @media only screen and (max-width: 767px){
+  .footer-row {
+    display: block;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-media-copyright {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .footer-security {
+    justify-content: flex-end;
+  }
+  
+  }
+  @media only screen and (max-width: 991px){
+  .footer-security {
+    justify-content: flex-start;
+  }
+}
+  
