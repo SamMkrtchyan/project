@@ -638,11 +638,11 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
 
 .container{
   max-width: 1070px;
-    margin: 0 auto;
+  margin: 0 auto;
   }
   
   .coupon-block{
-    width: 33.3%;  
+    width: 100%;  
     text-align: center;
     margin: 0 10px 0 10px;
   }
@@ -765,8 +765,11 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
   /* -----------------Media-------------------- */
   
   @media(max-width: 1024px) {
-  
+   .cupconvert{   
+      margin: 0 auto
+     }
   .coupon{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -775,6 +778,8 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
   .coupon-block{
     display: flex;
     margin-top: 30px;
+    width: 100%;  
+    text-align: center;
   }
   .coupon-block img{
     width: 200px;
@@ -797,5 +802,4 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     .partners__item {
       width: 80%;
     }
-    
-  }
+      }
