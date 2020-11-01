@@ -48,9 +48,9 @@ div {
   outline: none;
 }
 
-section {
+/* section {
   margin: 50px 0;
-}
+} */
 
 .container {
   width: 90%;
@@ -100,83 +100,6 @@ section {
 }
 
 /* -----------------Header----------------------- */
-header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-header li a {
-  margin-right: 40px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-header nav {
-  background: #fff;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-} 
-header nav ul {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-nav.stroke ul li a {
-  position: relative;
-}
-
-header nav ul li a {
-  display: block;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #aaa;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-right: 35px;
-  transition: all .5s;
-}
-
-header nav.fill ul li a:after, header nav.stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  content: ".";
-  color: green;
-  background: #aaa;
-  height: 1px;
-}
-
-header nav ul li a:after, header nav ul li a:before {
-  transition: all .5s;
-}
-
-header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
-  color: green;
-}
-
-/* -------------------About----------------------- */
-.about {
-  padding: 80px 0;
-}
-
-.about  img {
-  width: 100%;
-}
-
-.about .aboutText {
-  font-size: 14px;
-  color: #151515;
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-}
-
 
 /* ------------------Statistic---------------------- */
 .statistic {
@@ -208,101 +131,6 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
   height: 2px;
   background: #57C3B5;
   margin-bottom: 10px;
-}
-
-/* -----------------BlockHeaders----------------- */
-.blockHeaders {
-  font-size: 48px;
-  color: #57C3B5;
-  font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/*------------------Buttton------------------------ */
-.greenButton {
-  white-space: nowrap;
-  color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  border: none;
-  padding: 10px 40px;
-  background-image: linear-gradient(to right, #4aeea1, #57bfb6);
-  border-radius: 5px;
-  font-weight: 900;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),
-    7px 7px 20px 0 rgba(0, 0, 0, .1),
-    4px 4px 5px 0 rgba(0, 0, 0, .1);
-}
-
-.greenButton:hover {
-  color: #57bfb6;
-  background: transparent;
-  box-shadow: none;
-}
-
-.greenButton:before,
-.greenButton:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: #57bfb6;
-  box-shadow: -1px -1px 5px 0px #fff,
-    7px 7px 20px 0px #0003,
-    4px 4px 5px 0px #0002;
-  transition: 400ms ease all;
-}
-
-.greenButton:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.greenButton:hover:before,
-.greenButton:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
-}
-
-/* ------------------------HOME-------------------- */
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/home.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 44vw;
-  margin-top: 50px;
-}
-
-.home h1 {
-  font-size: 50px;
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  text-align: center;
-}
-
-.home p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  text-align: center;
 }
 
 /* ------------------Services------------------- */
@@ -355,15 +183,6 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
   color: #fff;
   text-transform: capitalize;
 }
-
-/* $fontLato: 'Lato', sans-serif; */
-/* $fontPoppins: 'Poppins', sans-serif; */
-/* $colorWhite: #ffffff; */
-/* $colorBlack: #151515; */
-/* $colorDarkGrey: #5F656C; */
-/* $colorGreen: #57C3B5; */
-/* $colorLightGrey:#76948D; */
-/* $shadow:  0px 0px 35px -4px rgba(0,0,0,0.76); */
 
 /* --------------------Blog----------------- */
 .blog-heading {
@@ -980,10 +799,9 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     border-color: #47cecb;
   }
 
-  /* -----------------Media-------------------- */
+/* -----------------Media-------------------- */
   
-  @media(max-width: 1024px) {
-  
+@media(max-width: 1024px) {
   .coupon{
     display: flex;
     justify-content: center;
@@ -994,26 +812,30 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     display: flex;
     margin-top: 30px;
   }
-
   .coupon-block + .coupon-block {
     margin-left: 0;
   }
-
   .coupon-block img{
     width: 200px;
   }
   .convert{
     margin-left: 20px;
   }
+  .partners__item {
+    width: 45%;
   }
-  
-  
-  @media(max-width: 1024px) {
-    .partners__item {
-      width: 45%;
-    }
-   
+  .block-20 {
+    height: 300px;
   }
+  .blog-entry .text .heading {
+    font-size: 20px;
+  }
+  .blog-descr {
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+}
+  
 
   @media(max-width: 775px) {
     .coupon-block{
@@ -1029,7 +851,6 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     .partners__item {
       width: 80%;
     }
-    
   }
 
   @media (max-width: 576px){
@@ -1068,9 +889,9 @@ header nav.fill ul li a:after, header nav.stroke ul li a:after:hover {
     .footer-media-copyright > p {
       display: block;
       margin-top: 30px;
-    }
-    
-    }
+    }  
+  }
+  
     @media only screen and (max-width: 767px){
     .footer-row {
       display: block;
