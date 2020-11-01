@@ -1,19 +1,16 @@
 $(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $(".scrollToTop").fadeIn(100);
+    } else {
+      $(".scrollToTop").fadeOut(100);
+    }
+  });
 
-    
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $(".scrollToTop").fadeIn(100);
-        } else {
-            $(".scrollToTop").fadeOut(100);
-        }
-    });
-
-    $(".scrollToTop").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-    });
+  $(".scrollToTop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 100);
+  });
 });
-
 
 const body = document.querySelector("body");
 const navbar = document.querySelector(".navbar");
@@ -38,3 +35,13 @@ window.onscroll = () => {
     navbar.classList.remove("sticky");
   }
 };
+
+$(".smooth-goto").on("click", function () {
+  $("html, body").animate({ scrollTop: $(this.hash).offset().top - 250 }, 100);
+  return false;
+});
+
+$(".scrblog-etc").on("click", function () {
+  $("html, body").animate({ scrollTop: $(this.hash).offset().top - 110 }, 100);
+  return false;
+});
