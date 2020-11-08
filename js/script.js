@@ -17,6 +17,9 @@ const navbar = document.querySelector(".navbar");
 const menuBtn = document.querySelector(".menu-btn");
 const colorCh = document.querySelectorAll(".colorCh");
 const cancelBtn = document.querySelector(".cancel-btn");
+const smooth = document.querySelectorAll(".smooth-goto");
+const scrollblog = document.querySelectorAll(".scrblog-etc");
+
 
 menuBtn.onclick = () => {
   navbar.classList.add("show");
@@ -28,6 +31,20 @@ cancelBtn.onclick = () => {
   navbar.classList.remove("show");
   menuBtn.classList.remove("hide");
 };
+smooth.forEach(element => {
+  element.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  };
+});
+scrollblog.forEach(element => {
+  element.onclick = () => {
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  };
+});
 window.onscroll = () => {
   if (this.scrollY >= 20) {
     navbar.classList.add("sticky");
