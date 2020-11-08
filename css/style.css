@@ -96,7 +96,7 @@ div {
 }
 
 .title span {
-  color: #57c3b5;
+  color: #a01313;
 }
 
 .title::after {
@@ -106,7 +106,7 @@ div {
   right: 5px;
   width: 160px;
   height: 1px;
-  background-color: #57c3b5;
+  background-color: #a01313;
 }
 
 .title::before {
@@ -116,7 +116,7 @@ div {
   left: 5px;
   width: 160px;
   height: 1px;
-  background-color: #57c3b5;
+  background-color: #a01313;
 }
 
 /* -----------------Header----------------------- */
@@ -252,7 +252,7 @@ div {
 .section-b-inner h2,
 .section-b-inner {
   font-size: 3rem;
-  color: #57c3b5;
+  color: #a01313;
   text-transform: capitalize;
   text-align: center;
 }
@@ -283,7 +283,7 @@ div {
   text-transform: uppercase;
   border: none;
   padding: 10px 40px;
-  background-image: linear-gradient(90deg, #4aeea1, #57bfb6);
+  background-image: linear-gradient(90deg, #e01b1b, #a01313);
   border-radius: 5px;
   font-weight: 900;
   cursor: pointer;
@@ -294,7 +294,7 @@ div {
     7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
 .greenButton:hover {
-  color: #57bfb6;
+  color: #a01313;
   background: transparent;
   box-shadow: none;
 }
@@ -306,8 +306,8 @@ div {
   right: 0;
   height: 2px;
   width: 0;
-  background: #57bfb6;
-  box-shadow: -1px -1px 5px 0 #fff, 7px 7px 20px 0 rgba(0, 0, 0, 0.2),
+  background: #a01313;
+  box-shadow: -1px -1px 5px 0, 7px 7px 20px 0 rgba(0, 0, 0, 0.2),
     4px 4px 5px 0 rgba(0, 0, 0, 0.13333);
   transition: all 0.4s ease;
 }
@@ -351,7 +351,7 @@ div {
   display: inline-block;
   width: 80px;
   height: 2px;
-  background: #57c3b5;
+  background: #a01313;
   margin-bottom: 10px;
 }
 
