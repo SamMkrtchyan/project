@@ -331,11 +331,14 @@ div {
   margin-bottom: 50px;
 }
 
-.statistic h1 {
+.statistic .counter__wrapper {
+  display: flex;
   font-size: 45px;
   color: #fff;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .statistic p {
