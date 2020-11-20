@@ -3,8 +3,9 @@ $(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false,
-
+        // arrows: false,
+        prevArrow: '<i class="fas fa-arrow-left arrow-left arrow"></i>',
+        nextArrow: '<i class="fas fa-arrow-right arrow-right arrow"></i>',
         autoplay: true,
         autoplaySpeed: 1500,
         responsive: [
@@ -29,23 +30,3 @@ $(function(){
     })
 })
 
-// Statistic counter
-
-let counters = document.querySelectorAll('.counter');
-
-counters.forEach(number => {
-	let numberTop = number.getBoundingClientRect().top,
-  start = +number.innerHTML, end = +number.dataset.target;
-    
-	window.addEventListener('scroll', function onScroll() {
-		if(window.pageYOffset > numberTop - window.innerHeight / 2) {
-			this.removeEventListener('scroll', onScroll);
-			let interval = setInterval(function() {
-				number.innerHTML = ++start;
-				if(start == end) {
-					clearInterval(interval);
-				}
-			}, 6);
-		}
-	});
-});
